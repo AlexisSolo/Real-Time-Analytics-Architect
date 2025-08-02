@@ -1,6 +1,6 @@
 ## Real-Time Analytics Architect 🛰️📊
 
-An interactive, front-end visualization of a modern real-time data stack—the kind shipping production insights for curb-side, e-commerce, IoT, gaming and beyond.  
+An interactive, front-end visualization of a modern real-time data stack the kind shipping production insights for curb-side, e-commerce, IoT, gaming and beyond.  
 Click any node to see live KPIs, lineage, and plain-English explanations of how each component works together.
 
 ---
