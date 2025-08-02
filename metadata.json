@@ -1,0 +1,5 @@
+{
+  "name": "Real-Time Analytics Architect",
+  "description": "An interactive application that visually breaks down a real-time analytics architecture. Features a live dashboard with simulated stats and graphs, and detailed explanations for each system component.",
+  "requestFramePermissions": []
+}
