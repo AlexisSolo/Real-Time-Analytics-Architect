@@ -14,26 +14,6 @@ Click any node to see live KPIs, lineage, and plain-English explanations of how 
 
 ---
 
-## 🏗️ Architecture At A Glance
-```mermaid
-flowchart LR
-  subgraph Ingestion
-    PYP["Python Event Producer"]
-    PYP --> KAF[Kafka]
-  end
-
-  subgraph Stream Processing
-    KAF --> SPK[Spark Structured Streaming]
-    SPK --> SPEED[Snowflake (Speed Layer)]
-  end
-
-  SPK --> BATCH[Snowflake (DWH)]
-  BATCH --> DBT[dbt Transformations]
-  DBT --> PRP[Prophet/ARIMA Forecasts]
-  PRP --> RECO[Staffing Recommender]
-  RECO --> ALERT[Teams Alerts]
-
-  BATCH --> BI[Power BI Dashboard]
 🔑 Key Components & Features
 Layer	Tech	What It Demonstrates
 Ingestion	Python Producer + Apache Kafka	Schema registry, exactly-once semantics
